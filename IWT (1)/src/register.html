@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="js/mycript.js"></script>
+<title><center>Registration Form</center></title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+<!-- add a logo (b) -->
+<img class="logo" src="images/cart.png" alt="shopping cart" width="200px" height="200px">
+
+<center>
+<h1>Shopping Cart</h1>
+<h3 id ="header">The Online shopping store</h3>
+</center>
+<hr id ="test"/>
+<ul class="menu">
+<li class="menu"><a href="#">Home</a></li>
+<li class="menu"><a href="news.html">News</a></li>
+<li class="menu"><a href="register.html">Contact</a></li>
+<li class="menu"><a href="#">About us</a></li>
+</ul>
+<form onsubmit="return checkPassword()">
+	First Name:<br/>
+	<input type="text" name="firstname" placeholder="First Name" required><br/><br/>
+	
+	Last Name:<br/>
+	<input type="text" name="firstname" placeholder="Last Name" required><br/><br/>
+	
+	Gender:<br/>
+	<input type="radio" value="male" name="gender">Male
+	<input type="radio" value="female" name="gender" checked>Female<br/><br/>
+	
+	Mobile Number:<br/>
+	<input type="phone" name="phonenumber" placeholder="0771234567" pattern="[0-9]{10}" required><br/><br/>
+	
+	E mail:<br/>
+	<input type="email" name="email" placeholder="abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required><br/><br/>
+	
+	Address:<br/>
+	<textarea name="address" rows="8" cols="50" required> </textarea><br/><br/>
+	
+	DOB:<br/>
+	<input type="date" name="day" required><br/><br/>
+	
+	Password:<br/>
+	<input type="password" id="pwd" 
+	pattern="(/=.+\d)(?=.+[a-z])(?=.+[A-Z].{5,10}" required><br/><br/>
+	
+	Re-enter Password:<br/>
+	<input type="password" id="confirmed" 
+	pattern="(/=.+\d)(?=.+[a-z])(?=.+[A-Z].{5,10}" required><br/><br/>
+	
+	<br>
+	<input type="checkbox" class="inputStyle" id="checkbox" onclick="enablebutton()"> Accept privacy policy and Terms<br><br/>
+	
+	<center>
+	<input type="submit" value="submit" id="submitBtn" disabled>
+	</center>
+
+</form>
+<hr id="test"/>
+<footer>
+<center>
+<h5 style ="font-weight:bold; font-style:italic; text-align:center">created by:Dilhara</h5>
+<a href="http://courseweb.sliit.lk">Visit courseweb</a>
+</footer>
+</center>
+
+
+<!-- add a header (c)-->
+<!-- add a sub-header (c) -->
+<!-- add a horizontal line (d)-->
+<!-- add a horizontal menu (e) -->
+<!-- add a table (f)-->
+<!-- add a horizontal line (d)-->
+<!-- add a footer (g)-->
+</body>
+</html>
